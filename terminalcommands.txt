@@ -1,0 +1,78 @@
+TERMINAL COMMANDS
+
+$pwd //prasent working directory
+
+$mkdir // creating new directory
+    syntax - mkdir commands
+
+$cd // change directoy
+         syntax - cd  //main directory
+	 cd .. // one step back directory
+	 cd desktop/commands //forward directory
+
+$touch // creating file command
+       syntax - touch t1.txt
+
+$nano t1.txt // notepad in entering text
+
+Id  EmployeeName    Jobtitle    basePay OTPay  OtherPay  TotalPay TotalPayBenefits
+1   NATHANIEL         GM	167411   0	400184	  567595    567595		
+2   GARY             CAPTAIN	155966	245131	137811	  538909    538909
+3   ALBERT	     CAPTAIN    212739	106088  16452	  335279    335279
+4   CHRISTOPHER	     MECHANIC   77916   56120	198306	  332343    332343
+5   PATRICK	    DEPUTYCHIEF 134401  9737	182234	  326373    326373
+6   DAVID	    ASSTDEPUTY  118602  8601    189082    316285    316285 
+7   ALSON         BATTALIONCHIF 92492   89062   134426    307899    307899
+8   DAVID       DEPUTYDIRECTOR  256576  0       51322     302377    302377
+10  JOANNE          CHIEF      285262   0       17115     297608    297608
+12  PATRICIA        CAPTAIN    99722    87082   110804    297608    297608
+13  EDWARD          EXECUTIVE  294580   0        0        294580    294580
+
+ctrl+s // save 
+ctrl+c //exit
+bash t1.txt //run the program
+
+$grep -i "CAPTAIN" t1.txt //this command shows CAPTAIN in our datata 
+
+   GARY             CAPTAIN	155966	245131	137811	  538909    538909
+   ALBERT	     CAPTAIN    212739	106088  16452	  335279    335279
+   PATRICIA        CAPTAIN    99722    87082   110804    297608    297608
+$awk '{print}'data.txt
+$awk '{print NR}' data.txt // showing sequnce number
+$awk '{print $1,$3}' data.txt // showing column 1&3
+$awk '{print $NF}' data.txt // showing last column
+$awk 'NR==2 , NR==5 {print NR, $0}' data.txt // showing 2,3,4,5 rows
+$awk 'END{print NR}' data.txt // showing last line
+
+Id  EmployeeName    Jobtitle    basePay OTPay  OtherPay  TotalPay TotalPayBenefits
+1   NATHANIEL         GM	167411   0	400184	  567595    567595		
+2   GARY             CAPTAIN	155966	245131	137811	  538909    538909
+3   ALBERT	     CAPTAIN    212739	106088  16452	  335279    335279
+4   CHRISTOPHER	     MECHANIC   77916   56120	198306	  332343    332343
+5   PATRICK	    DEPUTYCHIEF 134401  9737	182234	  326373    326373
+6   DAVID	    ASSTDEPUTY  118602  8601    189082    316285    316285 
+7   ALSON         BATTALIONCHIF 92492   89062   134426    307899    307899
+8   DAVID       DEPUTYDIRECTOR  256576  0       51322     302377    302377
+10  JOANNE          CHIEF      285262   0       17115     297608    297608
+12  PATRICIA        CAPTAIN    99722    87082   110804    297608    297608
+13  EDWARD          EXECUTIVE  294580   0        0        294580    294580
+
+$head - n 5 data.txt // 1-5 rows showing
+
+$tail -n 2 data.txt // 12-13 rows showing
+
+$head -n 3 data.txt | tail -n 7 data.txt // 5 rows showing
+
+$rm -r data.txt // removed the directory
+
+$mv data.txt tata.txtx // rename the file
+
+$du -sh desktop // showing desktop storage space like 18MB
+
+$find .-size +5M // it will show the data 5MB files
+
+$echo // display the same input
+
+$sleep 20 // sleeping 20 seconds
+ 
+$date // display date
